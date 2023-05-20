@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    background-color:  rgb(137, 45, 45);
+}
+
+.inicio-nav{
+    background-color: rgb(125, 35, 35);
+    width: 100%;
+    border: solid black 2px;
+    display: flex;
+   
+}
+.inicio-nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+   
+
+}
+
+.inicio-nav ul li {
+    
+    width: 100%;
+    border-right: solid black 1px;
+    text-align: center;
+   
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+a:hover{
+  font-size: 25px;   
+  transition: font-size .45s ;
+}
+.portada-cafeteria{
+    background-image: url(imagenes/portada-cafeteria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    
+}
+.portada-cafeteria p{
+    color: azure;
+    position: relative;
+   
+
+    right: 200px;
+    padding: 20%;
+    font-size: 40px;
+    height: 20px;
+    
+    
+    
+    
+}
+.menu-cafeteria ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+.menu-cafeteria ul li{
+    width: 30%;
+    
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    
+}
+.menu-cafeteria ul li p{
+    padding: 20px;
+    background-color: rgb(157, 132, 100);
+    
+}
+.menu-cafeteria ul li img{
+    display: none;
+    background-color: black;
+    }
+
+.subrayado {
+        display: inline-block;
+        width: 10px;
+        animation: parpadeo 1s infinite;
+}
+@keyframes parpadeo {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+
+@media only screen and (max-width: 390px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100.5%;
+    }
+    .portada-cafeteria{
+        width: 100%;
+    }
+    .portada-cafeteria p{
+        font-size: 15px;
+        width: 100%;
+        margin-left: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 280px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+    }
+    .inicio-nav{
+        width: 111.5%;
+    }
+    a:hover{
+        font-size: 19px;
+        transition: font-size .5s;
+    }
+    .menu-cafeteria ul{
+        width: 80%;
+        margin-left:20px;
+    }
+
+    .portada-cafeteria{
+        width: 111.5%;
+    }
+    .portada-cafeteria p{
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width:393px) and (max-width:545px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100.5%;
+    }
+    .portada-cafeteria{
+        width: 100%;
+    }
+    .portada-cafeteria p{
+        font-size: 15px;
+        width: 100%;
+        margin-left: 130px;
+    }
+
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 912px){
+    .portada-cafeteria p{
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width: 500px){
+    .menu-cafeteria ul {
+        display: block;
+        width: 100%;
+
+    } 
+    .menu-cafeteria ul li{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .menu-cafeteria ul li {
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+  }

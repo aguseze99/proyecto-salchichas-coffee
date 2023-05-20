@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logo-salchicha.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Salchichas coffee</title>
+</head>
+<body>
+    <nav class="inicio-nav" id="inicio-nav">
+        <ul>
+            <li class="inicio" id="inicio-nav"> <a href="#inicio-nav">Inicio</a></li>
+            <li class="menu"><a href="#menu-cafeteria">Menú</a> </li>
+            <li class="nosotros"><a href="#map">Sobre nosotros</a> </li>
+        </ul>
+    </nav>
+    <div class="portada-cafeteria">
+        <p id="texto-portada"></p>
+        
+    </div>
+
+    <main class="menu-cafeteria" id="menu-cafeteria">
+        <ul>
+            <li id="cafe"><p>Cafe</p><img src="./imagenes/cafe-sin-fondo.png" alt="" width="100%"></li>
+            <li id="lagrima"><p>Lágrima</p><img src="./imagenes/lagrima-sin-fondo.png" alt="" width="100%"></li>
+            <li id="cafe-cortado"><p>Cafe cortado</p><img src="./imagenes/cortado.png" alt="" width="100%"></li>
+            <li id="cafe-con-leche"><p>Cafe con leche</p><img src="./imagenes/cafe-con-leche-sin-fondo.png" alt="" width="100%"></li>
+            <li id="capuccino"><p>Capuccino</p><img src="./imagenes/capuccino-sin-fondo.png" alt="" width="100%"></li>
+            <li id="latte"><p>Latte</p><img src="./imagenes/latte-machiatto.jpg" alt="" width="100%"></li>
+            <li id="submarino"><p>Submarino</p><img src="./imagenes/submarino-sin-fondo.png" alt="" width="100%"></li>
+            <li id="te"><p>Te</p><img src="./imagenes/te-sin-fondo.png" alt="" width="100%"></li>
+
+            <li id="exprimido"><p>Exprimido</p><img src="./imagenes/exprimidos-sin-fondo.png" alt="" width="100%"></li>
+            <li id="licuado"><p>Licuado</p><img src="./imagenes/licuados.png" alt="" width="100%"></li>
+            <li id="frappe"><p>Frappe</p><img src="./imagenes/frappe-de-cafe-sin-fondo.png" alt="" width="100%"></li>
+            <li id="te-helado"><p>Te helado</p><img src="./imagenes/te-helado-sin-fondo.png" alt="" width="100%"></li>
+
+            <li id="tostados"><p>Tostados</p><img src="./imagenes/tostados-sin-fondo.png" alt="" width="100%"></li>
+            <li id="medialunas"><p>Medialunas</p><img src="./imagenes/medialunas-sin-fondo.png" alt="" width="100%"></li>
+            <li id="croassant"><p>Croassant</p><img src="./imagenes/croassant-sin-fondo.png" alt="" width="100%"></li>
+
+            <li id="selva-negra"><p>Selva negra</p><img src="./imagenes/selva-negra.png" alt="" width="100%"></li>
+            <li id="tarta-de-ricota"><p>Tarta de ricota</p><img src="./imagenes/tarta-de-ricota.png" alt="" width="100%"></li>
+            <li id="cheesecake"><p>Cheesecake</p><img src="./imagenes/cheesecake.png" alt="" width="100%"></li>
+            <li id="lemon-pie"><p>Lemon pie</p><img src="./imagenes/lemon-pie.png" alt="" width="100%"></li>
+        
+        </ul>
+    </main>
+
+    <!-- <footer> -->
+        <div id="map"></div>
+
+        <!--
+          The `defer` attribute causes the callback to execute after the full HTML
+          document has been parsed. For non-blocking uses, avoiding race conditions,
+          and consistent behavior across browsers, consider loading using Promises
+          with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+          -->
+    
+          <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbOphvS7z5waudehtHU85njct62s8AG7Y&callback=initMap&v=weekly"
+          defer
+        ></script>
+    <!-- </footer> -->
+</body>
+<script src="main.js"></script>
+</html>
